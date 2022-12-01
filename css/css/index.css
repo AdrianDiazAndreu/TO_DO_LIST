@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+hr{
+    border: 1px solid black;
+
+}
+
+
+/*Estilo del body*/
+body{
+    background-color: #343a40;
+}
+
+/*Estilo del header de la pàgina*/
+#header{
+    color: #f9f9f9;
+    width: auto;
+    padding: 5.5rem;
+    
+}   
+/*Estilo del titulo*/
+#title{
+    font-family: 'Inter', sans-serif;
+    font-size: 400%;
+
+}
+/* Estilo de las columnas*/
+.columna{
+    font-family: 'Inter', sans-serif;
+    background-color: #d9d9d9;
+    height: 52rem;
+}
+/*Estilo de los botones de las tareas*/
+.task{
+    font-weight: bolder;
+    /*padding: 1rem 8rem 1rem 8rem;*/
+    width: 25rem;
+    height: 4rem;
+    font-size: x-large;
+}
+/*Estilo del modal*/
+
+
+#to_do{
+    animation: todoAnimation 1s forwards;
+}
+#in_progress{
+
+    animation: inProgressAnimation 2s forwards;
+}
+#done{
+
+    animation: doneAnimation 3s forwards;
+}
+
+
+@keyframes todoAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes inProgressAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes doneAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+
+    
+
+
